@@ -283,7 +283,7 @@ body {
 
 .container {
   max-width: 1200px;
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,30 +305,11 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 10px;
-}
-
-header h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-}
-
-header h1 span {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
+  margin: 3% 10%;
 }
 
 header img {
-  height: 47px;
-  width: 59px;
-  padding-bottom: 10px;
+  margin: 4% 0;
 }
 
 header nav {
@@ -339,12 +320,12 @@ header nav {
 header nav ul li {
   list-style: none;
   display: inline;
-  padding: 0px 30px 0px 0px;
+  padding: 0 5%;
 }
 
 header nav ul li a {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -359,7 +340,7 @@ header nav ul li a {
   flex-flow: row wrap;
   background-color: #80b5be;
   width: 100%;
-  padding: 50px 20px;
+  padding: 10% 5%;
 }
 
 .reference {
@@ -367,22 +348,24 @@ header nav ul li a {
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  margin: 25px 0px;
 }
 
 .work h1 {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.875rem;
-  font-weight: 400;
+  font-weight: 700;
   color: #025e73;
+  padding: 0;
+  margin: 0;
+  width: 100%
 }
 
 .work h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125rem;
-  font-weight: 400;
   color: #025e73;
   line-height: 1.5rem;
+  margin: 10% 0 0 0;
 }
 
 .work p {
@@ -400,8 +383,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 0px;
-  background-color: #102426;
+  padding: 10%;
 }
 
 #contact {
@@ -420,8 +402,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   flex-flow: row wrap;
-  margin: 50px 0px;
+  margin: 10%;
 }
 
 footer h6 {
@@ -431,8 +414,13 @@ footer h6 {
   color: #ffffff;
   width: 100%;
   text-align: center;
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+}
+
+#social img {
+  height: 40px;
+  width: 40px;
+  margin: 5%;
 }
 
 footer p {
@@ -442,14 +430,54 @@ footer p {
   text-align: center;
 }
 
-footer ul li {
-  list-style: none;
-  display: inline;
-  padding: 0px 30px 0px 0px;
+footer a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-footer ul li img {
-  height: 40px;
-  width: 40px;
+/***** TABLET *****/
+
+@media only screen and (min-width:520px) {
+  header {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  header nav {
+    border-top: none;
+    width: 38%
+  }
+  
+  .work {
+    padding: 10%;
+  }
+
+  .reference {
+    width: 40%;
+    margin: 4%;
+  }
+
+  #social, #contact {
+    width: 40%;
+    margin: 5%;
+  }
+
 }
 
+/***** DESKTOP *****/
+
+@media only screen and (min-width:1200px) {
+  header nav {
+    border-top: none;
+    width: 25%
+  }
+
+  .work {
+    padding: 5% 10%;
+  }
+
+  .reference {
+    margin: 0 4%;
+  }
+
+}
