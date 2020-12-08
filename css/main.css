@@ -290,57 +290,6 @@ body {
   flex-flow: row wrap;
 }
 
-h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-h1 span {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-h3 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #025e73;
-}
-
-h4 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.875rem;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-h5 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: #025e73;
-}
-
-h6 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #ffffff;
-}
-
 p {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
@@ -356,39 +305,52 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 10px;
+  margin: 3% 10%;
 }
 
 header img {
-  height: 47px;
-  width: 59px;
+  margin: 4% 0 4%;
 }
 
 header nav {
   width: 100%;
+  border-top: 1px gray solid;
 }
 
 header nav ul li {
   list-style: none;
   display: inline;
-  padding: 20px;
+  padding: 0 5%;
 }
 
 header nav ul li a {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-/***** EFFING BACKGROUND IMAGE *****/
+/***** TOP SECTION *****/
 
 .top-section {
-  background: url('../img/desktop.png');
+  background: url('../img/homeofficemobile.png');
+  width: 100%;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.top-section h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 10%;
 }
 
 /***** QUOTE *****/
@@ -396,15 +358,33 @@ header nav ul li a {
 .free-quote {
   width: 100%;
   background-color: #80b5be;
-  padding: 30px 20px 30px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  padding: 10%;
+}
+
+.free-quote h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #025e73;
+  width: 100%;
+}
+
+.free-quote p {
+  font-size: .75rem;
+  line-height: 1.5rem;
 }
 
 .free-quote form textarea {
   font-family: 'Poppins', sans-serif;
   font-size: .875rem;
   color: #9d9ea4;
-  padding: 15px 15px 0px 15px;
-  width: 90%;
+  border: none;
+  padding: 7% 7% 0;
+  width: 130%;
 }
 
 .free-quote form button {
@@ -415,9 +395,207 @@ header nav ul li a {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  width: 145%;
+  padding: 7% 0;
+  margin: 4% 0;
+}
+
+/***** SERVICES *****/
+
+.services {
+  background: url('../img/workspace.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 5% 10%;
+}
+
+#services h4 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.services-list img {
+  padding: 0;
+  margin: 0;
+}
+
+/***** ABOUT *****/
+
+.about {
+  background-color: #80b5be;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 10%;
+}
+
+.about h5 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0px;
   width: 100%;
-  padding: 15px 0px;
+}
+
+.about img {
+  width: 100%;
+  margin: 7% 0;
+}
+
+/***** FOOTER *****/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 10%;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#social {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-flow: row wrap;
+  margin: 10%;
+}
+
+footer h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+#social img {
+  height: 40px;
+  width: 40px;
+  margin: 5%;
+}
+
+footer p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 
+/***** TABLET *****/
 
+@media only screen and (min-width:520px) {
+  header {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  header nav {
+    border-top: none;
+    width: 38%
+  }
+
+  .top-section {
+    background: url('../img/home-office.png');
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .free-quote {
+    padding: 5% 10%;
+  }
+
+  #info, #form {
+    width: 44%;
+    padding: 0% 3%;
+  }
+
+  .free-quote form textarea {
+    width: 90%;
+  }
+  
+  .free-quote form button {
+    width: 105%;
+  }
+  
+  .services-list {
+    width: 30%;
+    margin: 5%;
+  }
+
+  .about img, .about p {
+    width: 45%;
+    margin: 2%;
+  }
+  
+  #social, #contact {
+    width: 40%;
+    margin: 5%;
+  }
+
+/***** DESKTOP *****/
+
+@media only screen and (min-width:1200px) {
+  
+  header nav {
+    border-top: none;
+    width: 25%
+  }
+
+  .free-quote {
+    padding: 3% 17%;
+  }
+
+  #services {
+    width: 100%;
+  }
+
+  .services-list {
+    width: 20%;
+  }
+
+  .about h5 {
+    margin: 0 2%;
+  }
+
+}	  

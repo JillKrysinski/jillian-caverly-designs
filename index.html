@@ -36,8 +36,9 @@
 <body>
   <div class="container">
     <header>
-      <img src="img/logo/logo-white.png" alt="Jillian Nicole Design Logo" />
-      <h1>JILLIAN NICOLE<span> DESIGN</span></h1>
+      <div id="logo">
+        <img src="img/logo/logo-text.png" alt="Jillian Nicole Design Logo" />
+      </div>
       <nav>
         <ul>
           <li><a href="/work/index.html">WORK</a></li>
@@ -45,56 +46,76 @@
         </ul>
       </nav>
     </header>
-    <section class="top-section" style="background-image: url('/img/desktop.png')">
-      <h2>Designed &amp; developed with you in mind.</h2>
+    <section class="top-section">
+      <h2>Designed &amp; developed 
+        <br>with you in mind.</h2>
     </section>
     <section class="free-quote">
-      <h3>Interested in a free quote?</h3>
-      <p>Find out more information about services and how I can best fit your business or personal needs.</p>
-      <h3>Find out more</h3>
-      <form action="mailto:jillianncaverly@gmail.com" method="post" enctype="text/plain">
-        <textarea name="email">name@email.com</textarea>
-        <br>
-        <button type="button" onclick="alert('Submitted!')">DOWNLOAD BROCHURE</button>
-      </form>
+      <div id ="info">
+        <h3>Interested in a free quote?</h3>
+        <p>Find out more information about services and how I can best fit your business or personal needs.</p>
+      </div>
+      <div id="form">
+        <h3>Find out more</h3>
+        <form action="mailto:jillianncaverly@gmail.com" method="post" enctype="text/plain">
+          <textarea name="email">name@email.com</textarea>
+          <br>
+          <button type="button" onclick="alert('Submitted!')">DOWNLOAD BROCHURE</button>
+        </form>
+      </div>
     </section>
     <section class="services">
-      <h4>Websites, logos, and marketing - 
+      <div id="services"><h4>Websites, logos, and marketing - 
         <br>your one-stop shop for a better business.</h4>
-      <ul>
-        <li><img src="img/icons/coffee-icon.png" alt="coffee icon" />
-          <br><p>Detroit-based designer &amp; developer - let's meet for coffee!</p></li>
-        <li><img src="img/icons/website-icon.png" alt="website icon" />
-          <br><p>Website design &amp; development for streamlined communication.</p></li>
-        <li><img src="img/icons/print-icon.png" alt="printer icon" />
-          <br><p>Print marketing, including labels, decals, and brochures.</p></li>
-        <li><img src="img/icons/billboard-icon.png" alt="billboard icon" />
-          <br><p>Digital marketing, including ads and billboards.</p></li>
-        <li><img src="img/icons/socialmedia-icon.png" alt="social media icon" />
-          <br><p>Social-media campaigns for Instagram and Facebook.</p></li>
-        <li><img src="img/icons/businesscard-icon.png" alt="business card icon" />
-          <br><p>Business materials including business cards and logos.</p></li>
-      </ul>
+      </div>
+      <div class="services-list">
+        <img src="img/icons/coffee-icon.png" alt="coffee icon" />
+        <p>Detroit-based designer &amp; developer - let's meet for coffee!</p>
+      </div>
+      <div class="services-list">
+        <img src="img/icons/website-icon.png" alt="website icon" />
+        <p>Website design &amp; development for streamlined communication.</p>
+      </div>
+      <div class="services-list">  
+        <img src="img/icons/print-icon.png" alt="printer icon" />
+        <p>Print marketing, including labels, decals, and brochures.</p>
+      </div>
+      <div class="services-list">
+        <img src="img/icons/billboard-icon.png" alt="billboard icon" />
+        <p>Digital marketing, including ads and billboards.</p>
+      </div>
+      <div class="services-list">
+        <img src="img/icons/socialmedia-icon.png" alt="social media icon" />
+        <p>Social-media campaigns for Instagram and Facebook.</p>
+      </div>
+      <div class="services-list">
+        <img src="img/icons/businesscard-icon.png" alt="business card icon" />
+        <p>Business materials including business cards and logos.</p>
+      </div>
     </section>
     <section class="about">
       <h5>Hi, I'm Jillian.</h5>
-      <img src="img/profile-img.JPG" alt="Jillian Nicole" />
+      <img src="img/profile-img.png" alt="Jillian Nicole" />
       <p>My voyage into design wasn’t always about design. I dappled in small business management and travel itinerary planning before finally pursuing a career in design - 8 years after my journey began.
-        <br>My goal is simple: to better your business through better design. We eat with oureyes, right? It’s the same for your business - a better website, or logos, or business cards could be the spark that ignates a whole new client base. 
-        <br>And I want to help, every step of the way.</p>
+        <br><br>My goal is simple: to better your business through better design. We eat with oureyes, right? It’s the same for your business - a better website, or logos, or business cards could be the spark that ignates a whole new client base. 
+        <br><br>And I want to help, every step of the way.</p>
     </section>
     <footer>
-      <h5>Contact</h5>
-      <p>555-555-5555
-        <br>jillian@jilliannicoledesign.com</p>
-      <h6>Social</h6>
-      <ul>
-        <li><img src="img/icons/instagram.png" alt="instagram icon" /></li>
-        <li><img src="img/icons/twitter.png" alt="twitter icon" /></li>
-        <li><img src="img/icons/facebook.png" alt="facebook icon" /></li>
-      </ul>
-      <p>Copyright 2020 | Jillian Nicole Design</p>
-      <p>Icons by <a href="www.icons8.com">Icons8</a></p>
+      <div id="contact">
+        <h6>Contact</h6>
+        <p>555-555-5555
+          <br><a href="mailto:jillian@jilliannicoledesign.com">jillian@jilliannicoledesign.com</a></p>
+      </div>
+      <div id ="social">
+        <h6>Social</h6>
+        <img src="img/icons/instagram.png" alt="instagram icon" />
+        <img src="img/icons/twitter.png" alt="twitter icon" />
+        <img src="img/icons/facebook.png" alt="facebook icon" />
+      </div>
+      <div id="copyright">
+        <p>Copyright 2020 | Jillian Nicole Design
+          <br>Icons by <a href="www.icons8.com">Icons8</a></p>
+      </div>
     </footer>
   </div>
 
