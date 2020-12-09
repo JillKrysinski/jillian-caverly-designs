@@ -35,35 +35,51 @@
 
 <body>
   <div class="container">
+
+<!-- HEADER -->
+
     <header>
-      <div id="logo">
-        <img src="img/logo/logo-text.png" alt="Jillian Nicole Design Logo" />
+      <div class="wrapper">
+        <a href="http://www.jillianicoledesign.com"><img src="img/logo/logo-text.png" alt="Jillian Nicole Design Logo" /></a>
+        <div class="header-divider"></div>
+        <nav>
+          <ul>
+            <li><a href="/work/index.html">WORK</a></li>
+            <li><a href="contact/index.html">CONTACT</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="/work/index.html">WORK</a></li>
-          <li><a href="contact/index.html">CONTACT</a></li>
-        </ul>
-      </nav>
     </header>
-    <section class="top-section">
-      <h2>Designed &amp; developed 
-        <br>with you in mind.</h2>
-    </section>
-    <section class="free-quote">
-      <div id ="info">
-        <h3>Interested in a free quote?</h3>
-        <p>Find out more information about services and how I can best fit your business or personal needs.</p>
-      </div>
-      <div id="form">
-        <h3>Find out more</h3>
-        <form action="mailto:jillianncaverly@gmail.com" method="post" enctype="text/plain">
-          <textarea name="email">name@email.com</textarea>
-          <br>
-          <button type="button" onclick="alert('Submitted!')">DOWNLOAD BROCHURE</button>
-        </form>
-      </div>
-    </section>
+
+<!-- MAIN -->
+
+    <main>
+      <section class="top-section">
+          <div class="content">
+            <h2>Designed &amp; developed 
+            <br>with you in mind.</h2>
+          </div>
+      </section>
+
+      <aside>
+        <div class="content">
+          <div class="free-quote">
+            <h3>Interested in a free quote?</h3>
+            <p>Find out more information about services and how I can best fit your business or personal needs.</p>
+          </div>
+          <div class="more-info">
+            <h3>Find out more</h3>
+            <div class="input">
+              <form action="mailto:jillianncaverly@gmail.com" method="post" enctype="text/plain">
+                <textarea name="email">name@email.com</textarea>
+                <br>
+                <button type="button" onclick="alert('Submitted!')">DOWNLOAD BROCHURE</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </aside>
+
     <section class="services">
       <div id="services"><h4>Websites, logos, and marketing - 
         <br>your one-stop shop for a better business.</h4>
@@ -100,23 +116,38 @@
         <br><br>My goal is simple: to better your business through better design. We eat with oureyes, right? It’s the same for your business - a better website, or logos, or business cards could be the spark that ignates a whole new client base. 
         <br><br>And I want to help, every step of the way.</p>
     </section>
+
+<!-- FOOTER -->
+
     <footer>
-      <div id="contact">
-        <h6>Contact</h6>
-        <p>555-555-5555
-          <br><a href="mailto:jillian@jilliannicoledesign.com">jillian@jilliannicoledesign.com</a></p>
-      </div>
-      <div id ="social">
-        <h6>Social</h6>
-        <img src="img/icons/instagram.png" alt="instagram icon" />
-        <img src="img/icons/twitter.png" alt="twitter icon" />
-        <img src="img/icons/facebook.png" alt="facebook icon" />
-      </div>
-      <div id="copyright">
-        <p>Copyright 2020 | Jillian Nicole Design
-          <br>Icons by <a href="www.icons8.com">Icons8</a></p>
+      <div class="wrapper">
+        <div class="content">
+          <div class="contact">
+            <h6>Contact</h6>
+            <address>
+              <p>555-555-5555
+                <br><a href="mailto:jillian@jilliannicoledesign.com">jillian@jilliannicoledesign.com</a></p>
+            </address>
+          </div>
+          <div class="social">
+            <h6>Social</h6>
+            <div class="social-icons">
+              <a href="http://www.instagram.com" target="blank"><img src="img/icons/instagram.png" alt="instagram icon" /></a>
+              <a href="http://www.twitter.com" target="blank"></a><img src="img/icons/twitter.png" alt="twitter icon" /></a>
+              <a href="http://www.facebook.com" target="blank"></a><img src="img/icons/facebook.png" alt="facebook icon" /></a>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>Copyright 2020 | Jillian Nicole Design
+              <br>Icons by <a href="www.icons8.com">Icons8</a></p>
+          </div>
+        </div>
       </div>
     </footer>
+
+
+
+
   </div>
 
 
