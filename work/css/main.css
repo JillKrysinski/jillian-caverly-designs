@@ -462,6 +462,10 @@ footer a {
     margin: 5%;
   }
 
+  footer {
+    padding: 5%;
+  }
+
 }
 
 /***** DESKTOP *****/
@@ -478,6 +482,10 @@ footer a {
 
   .reference {
     margin: 0 4%;
+  }
+
+  footer {
+    padding: 2%;
   }
 
 }

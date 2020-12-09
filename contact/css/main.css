@@ -283,7 +283,7 @@ body {
 
 .container {
   max-width: 1200px;
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,30 +305,11 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 10px;
-}
-
-header h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-}
-
-header h1 span {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
+  margin: 3% 10%;
 }
 
 header img {
-  height: 47px;
-  width: 59px;
-  padding-bottom: 10px;
+  margin: 4% 0 4%;
 }
 
 header nav {
@@ -339,147 +320,72 @@ header nav {
 header nav ul li {
   list-style: none;
   display: inline;
-  padding: 0px 30px 0px 0px;
+  padding: 0 5%;
 }
 
 header nav ul li a {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-/***** TOP SECTION *****/
+/***** MISSION *****/
 
-.top-section {
-  background: url('../img/desktop.png');
-  background-size: cover;
-  background-position: center;
-  height: 500px;
+#mission {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
-}
-
-.top-section h2 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 50px 5% 0px 5%;
-}
-
-/***** QUOTE *****/
-
-.free-quote {
   width: 100%;
-  background-color: #80b5be;
-  padding: 20px 20px 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-flow: row wrap;
-}
-
-.free-quote h3 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #025e73;
-  width: 100%;
-}
-
-.free-quote p {
-  font-size: .75rem;
-  line-height: 1.5rem;
-}
-
-.free-quote form textarea {
-  font-family: 'Poppins', sans-serif;
-  font-size: .875rem;
-  color: #9d9ea4;
-  border: none;
-  padding: 15px 15px 0px;
-  width: 130%;
-}
-
-.free-quote form button {
   background-color: #025e73;
-  border: none;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.125rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  width: 145%;
-  padding: 15px 0px;
-  margin: 10px 0px;
+  padding: 5% 10%;
 }
 
-/***** SERVICES *****/
-
-.services {
-  background: url('../img/workspace.png');
-  background-size: cover;
-  background-position: center;
-  height: 1450px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;
-}
-
-
-.services h4 {
+#mission h1 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.875rem;
-  font-weight: 400;
+  font-size: 2rem;
   color: #ffffff;
-  margin: 50px 5% 30px 5%;
+  font-weight: 700;
+  width: 100%;
 }
 
-#services-list {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;
+/***** MAP *****/
+
+#map {
+  background: url('../../img/map-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
 }
 
-.services ul {
-  width: 80%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+/***** CONTACT *****/
 
-.services ul li {
-  padding: 0px 0px 40px;
-}
-
-/***** ABOUT *****/
-
-.about {
-  background-color: #80b5be;
+#contact-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  padding: 35px 10px;
+  width: 100%;
+  background-color: #80b5be;
+  padding: 5% 10%;
 }
 
-.about h5 {
+#contact-info h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  color: #025e73;
+  font-weight: 700;
+  width: 100%;
+}
+
+#contact-info h2 {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.875rem;
+  color: #025e73;
   font-weight: 700;
-  color: #ffffff;
-  margin: 0px;
-}
-
-.about img {
-  width: 100%;
-  margin: 25px 0px;
 }
 
 /***** FOOTER *****/
@@ -489,7 +395,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 0px;
+  padding: 10%;
 }
 
 #contact {
@@ -508,8 +414,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   flex-flow: row wrap;
-  margin: 50px 0px;
+  margin: 10%;
 }
 
 footer h6 {
@@ -519,8 +426,13 @@ footer h6 {
   color: #ffffff;
   width: 100%;
   text-align: center;
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+}
+
+#social img {
+  height: 40px;
+  width: 40px;
+  margin: 5%;
 }
 
 footer p {
@@ -530,53 +442,60 @@ footer p {
   text-align: center;
 }
 
-footer ul li {
-  list-style: none;
-  display: inline;
-  padding: 0px 30px 0px 0px;
-}
-
-footer ul li img {
-  height: 40px;
-  width: 40px;
-}
-
-/***** WORK *****/
-
-.work {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  padding: 50px 0px;
-}
-
-.reference {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  padding: 50px 0px;
-}
-
-.work h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.875rem;
-  font-weight: 400;
-  color: #80b5be;
-}
-
-.work h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: #80b5be;
-  line-height: 1.5rem;
-}
-
-.work p {
-  font-family: 'Poppins', sans-serif;
-  font-size: .875rem;
+footer a {
   color: #ffffff;
-  line-height: 1.125rem;
+  text-decoration: none;
 }
+
+
+/***** TABLET *****/
+
+@media only screen and (min-width:520px) {
+  header {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  header nav {
+    border-top: none;
+    width: 38%
+  }
+
+  .half-content {
+    width: 45%;
+    padding-right: 5%;
+  }
+  
+  #map {
+    background: url('../../img/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+  }
+
+  #social, #contact {
+    width: 40%;
+    margin: 5%;
+  }
+
+  footer {
+    padding: 5%;
+  }
+
+}
+
+/***** DESKTOP *****/
+
+@media only screen and (min-width:1200px) {
+  
+  header nav {
+    border-top: none;
+    width: 25%
+  }
+
+  footer {
+    padding: 2%;
+  }
+
+}	  
