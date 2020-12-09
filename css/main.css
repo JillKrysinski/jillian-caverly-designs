@@ -296,28 +296,47 @@ p {
   color: #ffffff;
 }
 
-/***** HEADER *****/
+/***** HEADER & FOOTER *****/
 
 header {
-  text-align: center;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+  text-align: center;
   margin: 3% 10%;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 header img {
   margin: 4% 0 4%;
 }
 
+.header-divider {
+
+}
+
 header nav {
-  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
   border-top: 1px gray solid;
 }
 
-header nav ul li {
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   list-style: none;
   display: inline;
   padding: 0 5%;
@@ -331,13 +350,77 @@ header nav ul li a {
   text-transform: uppercase;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 10%;
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+footer .contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .social {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-flow: row wrap;
+  margin: 10%;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.social img {
+  height: 40px;
+  width: 40px;
+  margin: 5%;
+}
+
+footer p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /***** TOP SECTION *****/
 
 .top-section {
   background: url('../img/homeofficemobile.png');
-  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   height: 500px;
   display: flex;
   justify-content: flex-start;
@@ -353,7 +436,15 @@ header nav ul li a {
   margin: 10%;
 }
 
-/***** QUOTE *****/
+/***** ASIDE *****/
+
+aside {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
+}
 
 .free-quote {
   width: 100%;
@@ -420,7 +511,23 @@ header nav ul li a {
   color: #ffffff;
 }
 
-.services-list {
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.services-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.services-description {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,7 +551,7 @@ header nav ul li a {
   padding: 10%;
 }
 
-.about h5 {
+.about h1 {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.875rem;
   font-weight: 700;
@@ -458,63 +565,105 @@ header nav ul li a {
   margin: 7% 0;
 }
 
-/***** FOOTER *****/
+/***** MISSION *****/
 
-footer {
+.mission {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 10%;
-}
-
-#contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-#contact a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-#social {  
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  flex-flow: row wrap;
-  margin: 10%;
+  background-color: #025e73;
+  padding: 5% 10%;
 }
 
-footer h6 {
+.mission h1 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.125rem;
+  font-size: 2rem;
+  color: #ffffff;
   font-weight: 700;
-  color: #ffffff;
   width: 100%;
-  text-align: center;
+}
+
+/***** MAP *****/
+
+.map {
+  background: url('../../img/map-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
+}
+
+/***** CONTACT *****/
+
+.contact-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: #80b5be;
+  padding: 5% 10%;
+}
+
+#contact-info h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  color: #025e73;
+  font-weight: 700;
+  width: 100%;
+}
+
+#contact-info h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.875rem;
+  color: #025e73;
+  font-weight: 700;
+}
+
+/***** WORK *****/
+
+.work {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #80b5be;
+  width: 100%;
+  padding: 10% 5%;
+}
+
+.work .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.work h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #025e73;
+  padding: 0;
   margin: 0;
+  width: 100%
 }
 
-#social img {
-  height: 40px;
-  width: 40px;
-  margin: 5%;
-}
-
-footer p {
+.work h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  color: #ffffff;
-  text-align: center;
+  font-size: 1.125rem;
+  color: #025e73;
+  line-height: 1.5rem;
+  margin: 10% 0 0 0;
 }
 
-footer a {
+.work p {
+  font-family: 'Poppins', sans-serif;
+  font-size: .875rem;
   color: #ffffff;
-  text-decoration: none;
+  line-height: 1.125rem;
 }
 
 
@@ -567,10 +716,27 @@ footer a {
     width: 45%;
     margin: 2%;
   }
+
+  .half-content {
+    width: 45%;
+    padding-right: 5%;
+  }
+  
+  #map {
+    background: url('../../img/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+  }
   
   #social, #contact {
     width: 40%;
     margin: 5%;
+  }
+
+  footer {
+    padding: 5%;
   }
 
 }
@@ -598,6 +764,10 @@ footer a {
 
   .about h5 {
     margin: 0 2%;
+  }
+
+  footer {
+    padding: 2%;
   }
 
 }	  
