@@ -277,7 +277,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: .875rem;
+  font-size: 16px;
+  color: #ffffff;
   background-color: #102426;
 }
 
@@ -292,7 +293,7 @@ body {
 
 header nav ul li a {
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -314,7 +315,7 @@ footer h1 {
 
 .copyright p {
   font-family: 'Quicksand', sans-serif;
-  font-size: .5rem;
+  font-size: .875rem;
   color: #ffffff;
   text-align: center;
   margin: 10% 0 0;
@@ -327,7 +328,7 @@ footer h1 {
 
 h1 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
@@ -354,13 +355,25 @@ h3 {
   color: #ffffff;
 }
 
+article p {
+  font-size: .875rem;
+  line-height: 1.5rem;
+  margin: 0 0;
+}
+
 h4 {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.875rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #025e73;
   margin: 0px;
   width: 100%;
+}
+
+.about-info p {
+  font-size: .875rem;
+  line-height: 1.5rem;
+  margin: 0 0;
 }
 
 .mission h1 {
@@ -411,13 +424,6 @@ h4 {
   line-height: 1.125rem;
 }
 
-
-p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  color: #ffffff;
-}
-
 /***** HEADER & FOOTER *****/
 
 header {
@@ -441,16 +447,12 @@ header .wrapper {
   margin: 10px 0 0 0;
 }
 
-.header-divider {
-
-}
-
 header nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 80%;
+  width: 100%;
 }
 
 header nav ul {
@@ -459,8 +461,7 @@ header nav ul {
   align-items: center;
   flex-flow: row wrap;
   list-style: none;
-  display: inline;
-  padding-right: 40px;
+  display: inline-block;
 }
 
 footer .content {
@@ -491,6 +492,7 @@ footer .content {
 .copyright {
   width: 100%;
 }
+
 /***** TOP SECTION *****/
 
 .top-section {
@@ -678,6 +680,30 @@ article {
 /***** TABLET *****/
 
 @media only screen and (min-width:768px) {
+  
+  footer h1 {
+    font-size: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  aside p {
+    font-size: .875rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h4 {
+    font-size: 2.25rem;
+  }
 
   header .wrapper {
     justify-content: space-between;
@@ -698,7 +724,7 @@ article {
   }
 
   header nav {
-    width: 50%;
+    width: 60%;
   }
 
   .top-section .wrapper {
@@ -774,6 +800,40 @@ article {
 
 @media only screen and (min-width:1200px) {
   
+  footer h1 {
+    font-size: 1.875rem;
+  }
+  
+  h1 {
+    font-size: 3.75rem;
+  }
+  
+  h2 {
+    font-size: 1.875rem;
+  }
+  
+  aside p {
+    font-size: 1.125rem;
+  }
+  
+  h3 {
+    font-size: 2.25rem;
+  }
+
+  aside p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 3rem;
+  }
+
+  .about-info p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
   header .wrapper {
     justify-content: space-between;
     padding: 10px 120px 10px 0;
@@ -864,10 +924,6 @@ article {
     width: 30%;
     margin: 0 0 0 160px;
     padding: 0;
-  }
-
-  footer {
-    padding: 2%;
   }
 
 }	  
