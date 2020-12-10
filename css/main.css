@@ -441,6 +441,10 @@ header .wrapper {
   margin: 10px 0 0 0;
 }
 
+.header-divider {
+
+}
+
 header nav {
   display: flex;
   justify-content: center;
@@ -449,7 +453,11 @@ header nav {
   width: 80%;
 }
 
-header nav ul li {
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   list-style: none;
   display: inline;
   padding-right: 40px;
@@ -756,6 +764,10 @@ article {
     margin-left: 120px;
   }
 
+  footer {
+    padding: 5%;
+  }
+
 }
 
 /***** DESKTOP *****/
@@ -852,6 +864,10 @@ article {
     width: 30%;
     margin: 0 0 0 160px;
     padding: 0;
+  }
+
+  footer {
+    padding: 2%;
   }
 
 }	  
