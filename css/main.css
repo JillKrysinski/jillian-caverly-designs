@@ -473,7 +473,7 @@ footer .content {
   margin: 50px 0;
 }
 
-.social, .contact {  
+.social, .contact, {  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -483,10 +483,11 @@ footer .content {
   margin: 0 0 40px 0;
 }
 
-.social img {
-  height: 40px;
-  width: 40px;
-  margin: 7% 0;
+.social-icons i {
+  color: #025e73;
+  font-size: 3rem;
+  padding: 10px;
+  text-align: center;
 }
 
 .copyright {
