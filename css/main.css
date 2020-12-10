@@ -496,9 +496,8 @@ footer .content {
 /***** TOP SECTION *****/
 
 .top-section {
-  background: url('../img/homeofficemobile.png');
+  background: url('../img/desktop.jpg') center no-repeat #025e73;
   background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 500px;
   display: flex;
@@ -571,21 +570,25 @@ aside .wrapper {
 /***** SERVICES *****/
 
 .services {
-  background: url('../img/workspace.png');
+  background: url('../img/workspace.jpg') center no-repeat #102426;
   background-size: cover;
-  background-position: center;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 30px 0;
+  padding: 0;
+  margin: 0;
 }
 
 .services .wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-flow: row wrap;
+  width: 100%;
+  margin: 50px 30px 0;
+  padding: 0;
 }
 
 article {
@@ -755,6 +758,7 @@ article {
 
   .services {
     padding: 100px 65px;
+    width: 82%;
   }
 
   article {
@@ -885,6 +889,7 @@ article {
 
   .services {
     padding: 100px 120px;
+    width: 80%;
   }
 
  h3 {
