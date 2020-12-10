@@ -601,12 +601,17 @@ article {
   margin: 40px 0;
 }
 
-.services-icon, .services-description {
+.services-description {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
+}
+
+.services i {
+  font-size: 3.75em;
+  padding-bottom: 20px;
 }
 
 /***** ABOUT *****/
