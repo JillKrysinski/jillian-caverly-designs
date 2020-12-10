@@ -378,23 +378,23 @@ h4 {
 
 .mission h1 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 2rem;
+  font-size: 1.875rem;
   color: #ffffff;
   font-weight: 700;
   width: 100%;
 }
 
-#contact-info h1 {
+.contact-info h1 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 2rem;
+  font-size: 1.875rem;
   color: #025e73;
   font-weight: 700;
   width: 100%;
 }
 
-#contact-info h2 {
+.contact-info h2 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.125rem;
   color: #025e73;
   font-weight: 700;
 }
@@ -577,6 +577,7 @@ aside .wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  overflow: hidden;
   padding: 0;
   margin: 0;
 }
@@ -638,16 +639,45 @@ article {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
+  width: 90%;
   background-color: #025e73;
-  padding: 5% 10%;
+  padding: 50px 20px;
+  margin: 0;
+}
+
+.mission .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.mission-text {
+  width: 100%;
 }
 
 /***** MAP *****/
 
 .map {
-
+  width: 100%;
 }
+
+.map-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%; 
+  } 
+
+  .map-container iframe, .map-container object, .map-container embed {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  }
 
 /***** CONTACT *****/
 
@@ -656,10 +686,16 @@ article {
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
+  width: 90%;
   background-color: #80b5be;
-  padding: 5% 10%;
+  padding: 50px 20px;
+  margin: 0;
 }
+
+.get-free-quote {
+  margin: 15px 0;
+}
+
 
 /***** WORK *****/
 
@@ -670,7 +706,7 @@ article {
   flex-flow: row wrap;
   background-color: #80b5be;
   width: 100%;
-  padding: 10% 5%;
+  padding: 30px 20px;
 }
 
 .work .wrapper {
@@ -798,6 +834,36 @@ article {
     padding: 5%;
   }
 
+  .mission {
+    padding: 100px 65px;
+  }
+  
+  .mission-text {
+    width: 40%;
+    margin: 0 40px 0 0;
+  }
+  
+  .contact-section {
+    padding: 100px 65px;
+  }
+
+  .get-free-quote {
+    width: 45%;
+    margin-right: 20px;
+  }
+  
+  .get-more-info {
+    width: 45%;
+    margin-right: 20px;
+  }
+
+  .work  {
+    padding: 100px 65px;
+  }
+
+  .reference {
+    width: 45%;
+    padding-right: 30px;
 }
 
 /***** DESKTOP *****/
@@ -857,7 +923,7 @@ article {
   }
 
   header nav {
-    width: 40%;
+    width: 50%;
   }
 
   .top-section .wrapper {
@@ -929,6 +995,34 @@ article {
     width: 30%;
     margin: 0 0 0 160px;
     padding: 0;
+  }
+
+  .mission-text {
+    width: 45%;
+    margin: 0 40px 0 0;
+  }
+  
+  .contact-section {
+    padding: 100px 65px;
+  }
+
+  .get-free-quote {
+    width: 48%;
+    margin-right: 20px;
+  }
+  
+  .get-more-info {
+    width: 48%;
+    margin-right: 20px;
+  }
+
+  .work {
+    padding: 100px 65px;
+  }
+
+  .reference {
+    width: 45%;
+    padding-right: 50px;
   }
 
 }	  
